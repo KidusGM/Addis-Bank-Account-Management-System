@@ -12,8 +12,11 @@ class Account:
         if amount <= 0:
             raise ValueError("Must be positive")
         self.__balance += amount
+owner = input("Enter the name of the account owner: ")
+number = input("Enter the account number: ")
+balance = float(input("Enter the initial balance: "))
 
 acc = Account(
-"Almaz", "CBE-1001", 1500)
-acc.deposit(500)
+owner, number, balance)
+print("account Title: Addis Bank Account Management System")
 print(f" Owner: {acc.owner}, Account: {acc.account_number}, Balance: {acc.balance}")    
